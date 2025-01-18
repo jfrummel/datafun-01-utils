@@ -46,26 +46,26 @@ player_ratings:list = [8.3, 7.5, 9.0, 6.9, 7.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 # TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(player_ratings)  
-max_score: float = max(player_ratings)  
-mean_score: float = statistics.mean(player_ratings)  
-stdev_score: float = statistics.stdev(player_ratings)
+min_rating: float = min(player_ratings)  
+max_rating: float = max(player_ratings)  
+mean_rating: float = statistics.mean(player_ratings)  
+stdev_rating: float = statistics.stdev(player_ratings)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
 # TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
-Stellar Analytics: Delivering Professional Insights
+Rummel Analytics: Delivering Professional Insights
 ---------------------------------------------------------
 Has Domestic Clients:  {has_domestic_clients}
 Numnber of Clients:    {number_of_clients}
 Favorite Teams:        {favorite_sport_teams}
 Player Ratings:        {player_ratings}
-Minimum Rating: {min_score}
-Maximum Rating: {max_score}
-Mean Rating: {mean_score:.2f}
-Standard Deviation of Rating: {stdev_score:.2f}
+Minimum Rating: {min_rating}
+Maximum Rating: {max_rating}
+Mean Rating: {mean_rating:.2f}
+Standard Deviation of Rating: {stdev_rating:.2f}
 """
 
 #####################################
