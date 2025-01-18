@@ -46,10 +46,10 @@ player_ratings:list = [8.3, 7.5, 9.0, 6.9, 7.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
 # TODO: Replace these variable names with the variable name of your own numeric list
-min_score: float = min(client_satisfaction_scores)  
-max_score: float = max(client_satisfaction_scores)  
-mean_score: float = statistics.mean(client_satisfaction_scores)  
-stdev_score: float = statistics.stdev(client_satisfaction_scores)
+min_score: float = min(player_ratings)  
+max_score: float = max(player_ratings)  
+mean_score: float = statistics.mean(player_ratings)  
+stdev_score: float = statistics.stdev(player_ratings)
 
 # Use a Python formatted string (f-string) to show information
 # TODO: Modify the text in the byline to fit your information
@@ -58,14 +58,14 @@ byline: str = f"""
 ---------------------------------------------------------
 Stellar Analytics: Delivering Professional Insights
 ---------------------------------------------------------
-Has International Clients:  {has_international_clients}
-Years in Operation:         {years_in_operation}
-Skills Offered:             {skills_offered}
-Client Satisfaction Scores: {client_satisfaction_scores}
-Minimum Satisfaction Score: {min_score}
-Maximum Satisfaction Score: {max_score}
-Mean Satisfaction Score: {mean_score:.2f}
-Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+Has Domestic Clients:  {has_domestic_clients}
+Numnber of Clients:    {number_of_clients}
+Favorite Teams:        {favorite_sport_teams}
+Player Ratings:        {player_ratings}
+Minimum Rating: {min_score}
+Maximum Rating: {max_score}
+Mean Rating: {mean_score:.2f}
+Standard Deviation of Rating: {stdev_score:.2f}
 """
 
 #####################################
