@@ -1,14 +1,12 @@
 """
 Module: utils_rummel
 
-Purpose: Reusable Module for My Analytics Projects
+Purpose: This module was created to provide reusable code for future projects.
 
-Description: This module provides a byline for my analytics projects. 
+Description: This module creates a custom byline utilizing my global variables and python statistics.
 
 Author: Jeremy Rummel
 
-TODO: Change the module name in this opening docstring
-TODO: Change the author in this opening docstring
 """
 
 #####################################
@@ -16,44 +14,37 @@ TODO: Change the author in this opening docstring
 #####################################
 
 # Import helpful modules from the Python Standard library
-# See more at: https://docs.python.org/3/library/
 
-import statistics  # provides mean(), stdev() and more....
+
+import statistics  
+# provides mean(), stdev() and more....
 
 #####################################
 # Declare Global Variables
 #####################################
 
 # declare a boolean variable (has a value True or False)
-# TODO: Add another or replace this with your own boolean variable
 has_domestic_clients: bool = True
 
 # declare an integer variable 
-# TODO: Add or replace this with your own integer variable
 number_of_clients:int = 34
 
 # declare a floating point variable
-# TODO: Add or replace this with your own floating point variable
 average_weekly_hours_studying:float = 8.3
 
-# declare a list of strings
-# TODO: Add or replace this with your own list  
+# declare a list of strings 
 favorite_sport_teams:list = ["Chelsea", "Cubs", "Bulls"]
 
 # declare a list of numbers so we can illustrate statistics skills
-# TODO: Add or replace this with your own numeric list  
 player_ratings:list = [8.3, 7.5, 9.0, 6.9, 7.7]
 
 # Calculate basic statistics using built-in Python functions and the statistics module
-# TODO: Replace these variable names with the variable name of your own numeric list
 min_rating: float = min(player_ratings)  
 max_rating: float = max(player_ratings)  
 mean_rating: float = statistics.mean(player_ratings)  
 stdev_rating: float = statistics.stdev(player_ratings)
 
 # Use a Python formatted string (f-string) to show information
-# TODO: Modify the text in the byline to fit your information
-# TODO: Modify the variables in the byline to use your variable names
 byline: str = f"""
 ---------------------------------------------------------
 Rummel Analytics: Delivering Professional Insights
@@ -75,18 +66,7 @@ Standard Deviation of Rating: {stdev_rating:.2f}
 def get_byline() -> str:
     '''
     Get a byline for my analytics projects.
-       
     Returns a string byline that illustrates my specific skills.
-
-    A function is a block of code that performs a task.
-    This function just returns our byline.
-    We can call this (or other functions) in later modules 
-    so we can write it once and reuse it. 
-    We use a type hint to indicate this function returns a string
-    (that is, it has a Python type of str).
-    It doesn't need any additional information passed in, 
-    so there's nothing needed inside the parentheses.
-    Everything afer the colon must be indented consistently (usually 4 spaces)
     '''
     return byline
 
